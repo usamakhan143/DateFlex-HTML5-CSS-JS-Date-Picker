@@ -21,10 +21,17 @@ body {
   border: 1px solid #eee;
 }
 
+.col {
+  flex: 1;
+  margin: 0px 10px;
+}
+
 /* datepicker styles */
 
 .datepicker-container {
   position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
 .datepicker {

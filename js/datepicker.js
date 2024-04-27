@@ -128,7 +128,7 @@ const initializeDatepicker = (inputField) => {
 };
 
 // Initialize datepicker for first input field
-initializeDatepicker(document.getElementById("combine-date"));
+initializeDatepicker(document.getElementById("start-date"));
 
 // Initialize datepicker for second input field
-initializeDatepicker(document.getElementById("due-date"));
+initializeDatepicker(document.getElementById("end-date"));
