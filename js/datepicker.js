@@ -24,6 +24,14 @@ const initializeDatepicker = (inputField) => {
         datepicker.hidden = true;
     });
 
+    // Hide or close the datepicker when clicking anywhere outside of it
+    document.body.addEventListener("click", (event) => {
+        // Check if the clicked element is not a descendant of the datepicker
+        if (!datepicker.contains(event.target) && event.target !== dateInput) {
+            datepicker.hidden = true;
+        }
+    });
+
     // Handle apply button click event
     applyBtn.addEventListener("click", () => {
         dateInput.value = selectedDate.toLocaleDateString("en-US", {
